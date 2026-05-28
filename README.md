@@ -1,5 +1,5 @@
 # HumanResumeFilter
-
+someone hijacked ur readme~ guess what it's your collaborator. Another day another project~ but well we make the best duo~~hehe
 An end-to-end Python pipeline and **Web Application** that uses **semantic search**, **hybrid BM25 retrieval**, and **LLM re-ranking** to intelligently match and rank candidates against a Job Description.
 
 ![Web UI Demo](https://img.shields.io/badge/UI-Modern_Glassmorphism-8b5cf6?style=for-the-badge)
