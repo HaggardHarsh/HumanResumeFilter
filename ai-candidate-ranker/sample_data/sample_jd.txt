@@ -1,0 +1,44 @@
+Senior Backend Engineer — Cloud Platform Team
+
+About the Role
+We are looking for a Senior Backend Engineer to join our Cloud Platform team.
+You will design, build, and operate the core services that power our
+multi-tenant SaaS platform serving 2M+ active users. This is a high-impact
+role where you will influence architecture decisions and mentor junior engineers.
+
+Core Responsibilities
+- Design and implement scalable microservices using Python and Go.
+- Own the full lifecycle of backend services: design, development, testing,
+  deployment, and monitoring.
+- Lead the migration of legacy monolith components to event-driven architecture.
+- Collaborate with product, data, and infrastructure teams to ship features
+  that delight customers.
+- Conduct code reviews and establish engineering best practices across the team.
+- Participate in on-call rotations and lead incident response when necessary.
+- Mentor junior and mid-level engineers through pairing and design reviews.
+
+Required Skills
+- 5+ years of professional backend development experience.
+- Strong proficiency in Python; experience with Go is a significant plus.
+- Deep understanding of distributed systems, REST/gRPC APIs, and message
+  brokers (Kafka, RabbitMQ).
+- Hands-on experience with cloud platforms (AWS or GCP): EC2/GKE, S3,
+  Lambda/Cloud Functions, IAM.
+- Proficiency with relational databases (PostgreSQL) and NoSQL stores (Redis,
+  DynamoDB).
+- Experience with containerization (Docker) and orchestration (Kubernetes).
+- Familiarity with CI/CD pipelines (GitHub Actions, Jenkins, ArgoCD).
+
+Preferred Skills
+- Experience with infrastructure-as-code (Terraform, Pulumi).
+- Contributions to open-source projects.
+- Familiarity with observability stacks (Prometheus, Grafana, OpenTelemetry).
+- Prior experience at a high-growth startup or scaling a product from
+  thousands to millions of users.
+
+Soft Skills & Behavioral Expectations
+- Strong written and verbal communication skills.
+- Ability to break down ambiguous problems into actionable engineering plans.
+- A bias for action balanced with thoughtful design.
+- Comfortable giving and receiving candid feedback.
+- Demonstrated leadership: you don't need a title to lead.

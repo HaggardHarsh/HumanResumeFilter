@@ -1,0 +1,21 @@
+rank,candidate_id,name,title,final_score,llm_score,retrieval_score,justification
+1,CAND-0011,Rohan Das,Backend Engineer,87.3,,0.8729,LLM scoring skipped — no API key configured.
+2,CAND-0001,Arjun Mehta,Senior Backend Engineer,85.4,,0.8539,LLM scoring skipped — no API key configured.
+3,CAND-0019,Omar Sheikh,Software Engineer,83.2,,0.8317,LLM scoring skipped — no API key configured.
+4,CAND-0014,Sana Mirza,Cloud Architect,80.7,,0.807,LLM scoring skipped — no API key configured.
+5,CAND-0002,Priya Sharma,Platform Engineer,80.6,,0.8061,LLM scoring skipped — no API key configured.
+6,CAND-0017,Sameer Jain,Backend Engineer,76.7,,0.7667,LLM scoring skipped — no API key configured.
+7,CAND-0006,Ananya Reddy,Backend Engineer,74.8,,0.7481,LLM scoring skipped — no API key configured.
+8,CAND-0015,Aditya Kumar,ML Engineer,68.6,,0.6861,LLM scoring skipped — no API key configured.
+9,CAND-0007,Karthik Iyer,Principal Engineer,67.6,,0.6758,LLM scoring skipped — no API key configured.
+10,CAND-0004,Sneha Kulkarni,DevOps Engineer,66.7,,0.6667,LLM scoring skipped — no API key configured.
+11,CAND-0009,Amit Patel,Site Reliability Engineer,65.0,,0.6498,LLM scoring skipped — no API key configured.
+12,CAND-0012,Fatima Khan,Security Engineer,53.2,,0.5319,LLM scoring skipped — no API key configured.
+13,CAND-0013,Nikhil Gupta,Backend Developer,50.5,,0.5048,LLM scoring skipped — no API key configured.
+14,CAND-0018,Lakshmi Venkat,QA Automation Engineer,42.5,,0.4246,LLM scoring skipped — no API key configured.
+15,CAND-0016,Tanvi Bhatt,Engineering Manager,42.3,,0.4233,LLM scoring skipped — no API key configured.
+16,CAND-0020,Kavya Rao,Frontend Engineer,41.8,,0.418,LLM scoring skipped — no API key configured.
+17,CAND-0003,Rahul Verma,Full Stack Developer,25.2,,0.2524,LLM scoring skipped — no API key configured.
+18,CAND-0010,Deepa Joshi,Product Manager,16.0,,0.1595,LLM scoring skipped — no API key configured.
+19,CAND-0005,Vikram Singh,Data Scientist,14.3,,0.1432,LLM scoring skipped — no API key configured.
+20,CAND-0008,Meera Nair,Junior Developer,12.2,,0.1217,LLM scoring skipped — no API key configured.

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Candidate Ranker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>AI Candidate <span class="gradient-text">Ranker</span></h1>
+            <p>Upload a Job Description and a Candidate list to instantly get an AI-powered shortlist.</p>
+        </header>
+
+        <main>
+            <section class="upload-section glass-panel">
+                <form id="uploadForm">
+                    <div class="drop-zones">
+                        <!-- JD Upload -->
+                        <div class="drop-zone" id="jdDropZone">
+                            <i class="fa-solid fa-file-lines fa-3x"></i>
+                            <span class="drop-zone__prompt">Drop Job Description (.txt)<br>or click to browse</span>
+                            <input type="file" name="jd" id="jdInput" class="drop-zone__input" accept=".txt,.md,.json" required>
+                            <div class="file-name" id="jdFileName"></div>
+                        </div>
+
+                        <!-- Candidates Upload -->
+                        <div class="drop-zone" id="cvDropZone">
+                            <i class="fa-solid fa-file-csv fa-3x"></i>
+                            <span class="drop-zone__prompt">Drop Candidates (.csv)<br>or click to browse</span>
+                            <input type="file" name="candidates" id="cvInput" class="drop-zone__input" accept=".csv,.json" required>
+                            <div class="file-name" id="cvFileName"></div>
+                        </div>
+                    </div>
+
+                    <div class="settings-bar">
+                        <div class="setting-group">
+                            <label for="retrieval_top_n">Retrieval Top N</label>
+                            <input type="number" id="retrieval_top_n" name="retrieval_top_n" value="50" min="1" max="1000">
+                        </div>
+                        <div class="setting-group">
+                            <label for="llm_top_n">LLM Score Top N</label>
+                            <input type="number" id="llm_top_n" name="llm_top_n" value="20" min="1" max="100">
+                        </div>
+                        <div class="setting-group">
+                            <label for="alpha">Semantic Weight (α)</label>
+                            <input type="number" id="alpha" name="alpha" value="0.70" step="0.05" min="0" max="1">
+                        </div>
+                    </div>
+
+                    <div class="settings-bar" style="margin-top: -1rem;">
+                        <div class="setting-group">
+                            <label for="llm_provider">LLM Provider</label>
+                            <select id="llm_provider" name="llm_provider" class="custom-select">
+                                <option value="auto">Auto-Detect</option>
+                                <option value="openai">OpenAI</option>
+                                <option value="gemini">Google Gemini</option>
+                                <option value="xai">xAI (Grok)</option>
+                                <option value="groq">Groq</option>
+                            </select>
+                        </div>
+                        <div class="setting-group" style="flex-grow: 1;">
+                            <label for="api_key">API Key (Optional)</label>
+                            <input type="password" id="api_key" name="api_key" placeholder="Paste your API Key here..." style="width: 100%;">
+                        </div>
+                    </div>
+
+                    <button type="submit" id="runBtn" class="primary-btn">
+                        <span>Rank Candidates</span>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Loading State -->
+            <section id="loadingSection" class="hidden">
+                <div class="spinner"></div>
+                <h2>Analyzing Candidates...</h2>
+                <p>Running semantic search, BM25 keyword matching, and LLM re-ranking.</p>
+            </section>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="hidden">
+                <h2>Top Candidates</h2>
+                <div class="results-grid" id="resultsGrid">
+                    <!-- Cards injected via JS -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
