@@ -44,7 +44,6 @@ python app.py
 ```
 
 ### 3. Open the UI
-Navigate to **http://127.0.0.1:5000** in your browser.
 From the UI, you can:
 - Drag and drop your Job Description (`.txt`) and Candidate Database (`.csv`).
 - Adjust the retrieval settings (Semantic Weight, Top N).
