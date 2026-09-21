@@ -2,9 +2,6 @@
 someone hijacked ur readme~ guess what it's your collaborator. Another day another project~ but well we make the best duo~~hehe
 An end-to-end Python pipeline and **Web Application** that uses **semantic search**, **hybrid BM25 retrieval**, and **LLM re-ranking** to intelligently match and rank candidates against a Job Description.
 
-![Web UI Demo](https://img.shields.io/badge/UI-Modern_Glassmorphism-8b5cf6?style=for-the-badge)
-![Tech Stack](https://img.shields.io/badge/Stack-Flask_|_FAISS_|_SentenceTransformers-3b82f6?style=for-the-badge)
-
 ## Architecture
 
 The system can be used via the **beautiful web interface** or as a headless CLI. 
@@ -29,7 +26,7 @@ The system can be used via the **beautiful web interface** or as a headless CLI.
 
 ---
 
-## 🚀 Quick Start (Web App)
+## Quick Start (Web App)
 
 The easiest way to use the ranker is through the built-in web dashboard.
 
@@ -53,7 +50,7 @@ From the UI, you can:
 
 ---
 
-## 💻 CLI Usage
+## CLI Usage
 
 If you prefer to automate the pipeline or run it headlessly, you can use the CLI:
 
@@ -78,7 +75,7 @@ export OPENAI_API_KEY="your-key-here"
 # Or: GEMINI_API_KEY, XAI_API_KEY, GROQ_API_KEY
 ```
 
-## 📄 Candidate CSV Format
+## Candidate CSV Format
 
 Your candidate CSV (`.csv`) should include these columns:
 
